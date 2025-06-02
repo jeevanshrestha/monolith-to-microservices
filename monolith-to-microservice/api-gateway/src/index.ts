@@ -41,7 +41,7 @@ app.use('/api/v1/users', createProxyMiddleware({
 
   
 app.use('/api/v1/books', verifyToken, createProxyMiddleware({
-    target: 'http://localhost:4000',
+    target: 'http://localhost:3002',
     changeOrigin: true,
     pathRewrite: {
         '^': '/api/books'

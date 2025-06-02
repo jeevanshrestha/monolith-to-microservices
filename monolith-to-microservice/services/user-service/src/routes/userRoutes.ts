@@ -10,8 +10,8 @@ import {
   getUserById,
   adminUpdateUser,
 } from '../controllers/userController';
-import { protect, restrictTo } from '../middleware/authMiddleware';
-import { userValidationRules, validate } from '../middleware/validationMiddleware';
+import { protect, restrictTo } from '../middlewares/authMiddleware';
+import { userValidationRules, validate } from '../middlewares/validationMiddleware';
 
 const router = express.Router();
 

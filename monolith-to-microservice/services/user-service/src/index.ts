@@ -3,7 +3,7 @@ import cors from "cors"
 import userRoutes from "./routes/userRoutes";
 
 // Import error handling middleware
-import { errorHandler } from './middleware/errorMiddleware';
+import { errorHandler } from './middlewares/errorMiddleware';
 import { AppError } from './utils/appError';
 
 import { connectDB } from './config/db';
